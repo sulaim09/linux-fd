@@ -1,0 +1,38 @@
+rm filename1 filename2 filename3
+Copy
+You can also use a wildcard (*) and regular expansions to match multiple files. For example, to remove all .pdf files in the current directory, use the following command:
+
+rm *.pdf
+Copy
+When using regular expansions, first list the files with the ls command so that you can see what files will be deleted before running the rm command.
+
+Use the rm with the -i option to confirm each file before deleting it:
+
+rm -i filename(s)
+Copy
+To remove files without prompting, even if the files are write-protected, pass the -f (force) option to the rm command:
+
+rm -f filename(s)
+Copy
+You can also combine rm options. For example, to remove all .txt files in the current directory without a prompt in verbose mode, use the following command:
+
+rm -fv *.txt
+Copy
+How to Remove Directories (Folders)
+In Linux, you can remove/delete directories with the rmdir and rm.
+
+
+rmdir is a command-line utility for deleting empty directories, while with rm you can remove directories and their contents recursively.
+
+To remove an empty directory, use either rmdir or rm -d followed by the directory name:
+
+rm -d dirname
+Copy
+rmdir dirname
+Copy
+To remove non-empty directories and all the files within them, use the rm command with the-r (recursive) option:
+
+rm -r dirname
+Copy
+If a directory or a file within the directory is write-protected, you will be prompted to confirm the deletion.
+
